@@ -3,42 +3,43 @@ This is a backend application for a voting system where users can vote for candi
 
 ## Features
 User sign up and login with Aadhar Card Number and password
-User can view the list of candidates
-User can vote for a candidate (only once)
-Admin can manage candidates (add, update, delete)
-Admin cannot vote
-Technologies Used
+User can see all the candidates.
+User can vote for a one favourit candidaes.(only one time).
+Admin can manage all the candidates details means:-(add, update, delete) the candidate.
+Admin cannot vote any candidate.
+# Technologies Used are:-
 Node.js
 Express.js
 MongoDB
 JSON Web Tokens (JWT) for authentication
+
 Installation
 ## Clone the repository:
 
-`git clone` https://github.com/Prince-1501/voting_app.git
+`git clone` https://github.com/Shiv-cybr03/voting_app_backend
 
 # API Endpoints
 ## Authentication
 # Sign Up
 POST /signup: Sign up a user
-Login
+# Login
 POST /login: Login a user
 Candidates
-Get Candidates
+# Get Candidates
 GET /candidates: Get the list of candidates
-Add Candidate
+# Add Candidate
 POST /candidates: Add a new candidate (Admin only)
-Update Candidate
+# Update Candidate
 PUT /candidates/:id: Update a candidate by ID (Admin only)
-Delete Candidate
+# Delete Candidate
 DELETE /candidates/:id: Delete a candidate by ID (Admin only)
 Voting
-Get Vote Count
+# Get Vote Count
 GET /candidates/vote/count: Get the count of votes for each candidate
-Vote for Candidate
+# Vote for Candidate
 POST /candidates/vote/:id: Vote for a candidate (User only)
 User Profile
-Get Profile
+# Get Profile
 GET /users/profile: Get user profile information
-Change Password
+# Change Password
 PUT /users/profile/password: Change user password
